@@ -1,0 +1,48 @@
+# I have edited the sample requests to check about the output for every endpoint.
+# - name: sample body up
+#   body: '{"foo":"bar"}'
+#   headers:
+#     content-type: application/json
+#   method: POST
+#   url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+
+# - name: sample index up 
+#   body: '{}'
+#   headers:
+#     content-type: application/json
+#   method: GET
+#   url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/
+
+# - name: sample body down
+#   body: '{}'
+#   headers:
+#     content-type: application/json
+#   method: GET
+#   url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+
+# - name: sample error down
+#   body: '{}'
+#   headers:
+#     content-type: application/json
+#   method: GET
+#   url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/error
+
+- body: '{"foo":"bar"}'
+  headers:
+    content-type: application/json
+  method: POST
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+
+- name: sample index up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/
+
+- body: "{}"
+  headers:
+    content-type: application/json
+  method: POST
+  name: sample body down
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+
+- name: sample error down
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/error
